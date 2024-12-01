@@ -168,7 +168,7 @@
       }
 
       // Load the default image on page load
-      loadImageToCanvases('assets/Baby-Cake.jpg');
+      loadImageToCanvases('https://raw.githubusercontent.com/pleonardmusic/Triple-CIpher-Image/refs/heads/main/assets/baby-cake.jpg');
 
       imageInput.addEventListener("change", handleImageUpload);
     });
