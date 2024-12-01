@@ -168,7 +168,7 @@
       }
 
       // Load the default image on page load
-      loadImageToCanvases('https://peteleonard.org/wp-content/uploads/2024/08/Baby-Cake.jpg');
+      loadImageToCanvases('assets/Baby-Cake.jpg');
 
       imageInput.addEventListener("change", handleImageUpload);
     });
