@@ -1,0 +1,94 @@
+.wp-block-post-featured-image img {
+  display: none;
+}
+  .wp-block-post-title {display: none;}
+
+  /* body {background-color: black;} */
+  
+input::file-selector-button {
+    color: grey;
+	background-color: rgb(50,50,50);
+    padding: 0.5em;
+    border-radius: 2px;
+	  position: absolute;
+      top: 150px;
+      left: 10px;
+}	  
+
+    canvas {
+      flex: 1;
+      /*border: 1px solid #d3d3d3;*/
+      aspect-ratio: attr(width) / attr(height);
+      object-fit: contain;
+    }
+
+    .canvas-container {
+    position: absolute; /* You may want to use 'relative' depending on context */
+    top: 150px;
+    left: 0; /* Ensures it starts from the left edge */
+    width: 100%; /* Full-width container */
+    height: 100vh; /* 100% of viewport height */
+    background-color: black; /* Background color */
+    z-index: -1; /* Pushes it behind other content */
+}
+
+footer {
+    position: relative; /* Ensures it is pushed down by content above it */
+    z-index: 1; /* Ensures it stays above the canvas-container */
+    margin-top: 75vh; /* Ensures footer stays at the bottom after .canvas-container */
+}
+
+    #canvas1 {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      animation-name: leftRight;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+    }
+
+
+
+    @keyframes leftRight {
+      0% { left: 10px; top: 150px; }
+      50% { left: 33.333%; top: 150px; }
+      55% { left: 33.333%; top: 150px; }
+      100% { left: 10px; top: 150px; }
+    }
+
+    #canvas2 {
+      position: absolute;
+      top: 150px;
+      left: 33.333%;
+    }
+
+    #canvas3 {
+      position: absolute;
+      top: 150px;
+      left: 460px;
+      animation-name: rightLeft;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes rightLeft {
+      0% { left: 65%; top: 150px; }
+      50% { left: 33.333%; top: 150px; }
+      55% { left: 33.333%; top: 150px; }
+      100% { left: 65%; top: 150px; }
+    }
+
+    .p-container {
+      margin-top: 20px;
+    }
+
+    .screen {
+      mix-blend-mode: screen;
+    }
+	  
+	#clickMe {
+    color: grey;
+	  position: absolute;
+      top: 110px;
+      left: 90px;		  
+	  }  
